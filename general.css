@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Plus Jakarta Sans;
+}
+
+
+body{
+  background: linear-gradient(rgba(255, 255, 255, 1),rgba(240, 241, 255, 1));
+  
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media only screen and (min-width:768px){
+  
+}
+
+@media only screen and (min-width:1440px){
+
+
+}

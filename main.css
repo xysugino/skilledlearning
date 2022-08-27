@@ -1,0 +1,309 @@
+main{
+  /*display: flex;
+  flex-direction: column;*/
+  /*border: 2px solid red;*/
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-bottom: 80px;
+
+}
+
+
+
+.section-intro{
+  /*border: 2px solid blue;*/
+  margin-bottom: 45px;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50.4px;
+  color: rgba(19, 24, 63, 1);
+  margin-bottom: 26px;
+}
+
+.page-description{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(131, 134, 154, 1);
+  margin-bottom: 24px;
+}
+
+.button-main{
+  font-family: Plus Jakarta Sans;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 31.5px;
+  padding-right: 37px;
+  padding-left: 38px;
+  padding-top:15px ;
+  padding-bottom: 15px;
+  border: none;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700 ;
+}
+
+.section-image{
+  height: 301px;
+  background-image: url("assets/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  margin-bottom: 40px;
+  /*border: 2px solid red;*/
+}
+
+.main-image-tablet,
+.main-image-desktop{
+  display: none;
+}
+
+@media only screen and (min-width:768px){
+
+  main{
+    padding-left: 39px;
+    padding-right: 39px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .main-image-tablet{
+    position: absolute;
+    display: block;
+    top: -200px;
+    right: -290px;
+  }
+
+  .intro-and-image{
+    display: flex;
+    
+  }
+
+  .section-image{
+    background-image: none;
+    flex: 1;
+    height: 500px;
+  }
+
+  .section-intro{
+    flex: 1;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button-main{
+    max-width: 167px;
+  }
+}
+
+@media only screen and (min-width:1440px){
+
+  main{
+    padding-left: 165px;
+    padding-right: 165px;
+    margin-bottom: 140px;
+  }
+
+  .main-image-tablet{
+    display: none;
+  }
+
+  .main-image-desktop{
+    position: absolute;
+    display: block;
+    top: -210px;
+    right: -270px;
+  }
+
+  .section-intro{
+    flex: 1;
+    height: 800px
+  }
+
+
+}
+
+
+/*
+
+
+
+
+.intro-wrapper{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  align-items: center;
+}
+
+.girl-coffee-container{
+  height: 301px;
+  width: 327px;
+  border: 2px solid red;
+  background-image: url("assets/image-hero-mobile.png");
+  background-position: 50% 20%;
+  margin-bottom: 30px;
+  
+  
+}
+
+.girl-coffee-mobile{
+  width: 375px;
+  height: 400px;
+  
+  
+}
+
+.girl-coffee-tablet{
+  display: none;
+}
+
+.section-info{
+  font-family: Plus Jakarta Sans;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 10px;
+  padding-right: 29px;
+  padding-left: 28px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 16px;
+}
+
+.animation,
+.design,
+.photography,
+.crypto,
+.business{
+  border: 2px solid red;
+  width: 284px;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 26px;
+}
+
+.container-for-section{
+ background: #FFFFFF;
+}
+
+.nav-logo{
+  width: 56px;
+  height: 56px;
+}
+
+
+h3{
+  color: rgba(19, 24, 63, 1);
+  font-weight: 800;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  line-height: 25.2px;
+  margin-bottom: 16px;
+}
+
+.nav-description{
+  color: rgba(131, 134, 154, 1);
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.start{
+  color: rgba(247, 71, 128, 1);
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  size: 18px;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+
+
+
+
+@media only screen and (min-width:768px){
+
+  .main-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .intro-wrapper{
+    flex-direction: row;
+    margin-bottom: 140px;
+  }
+
+  .girl-coffee-container{
+    border: 2px solid blue;
+    flex: 1;
+  }
+
+  .intro-content-container{
+    border: 2px solid red;
+    flex: 1;
+  }
+
+  .girl-coffee-mobile{
+    display: none;
+  }
+
+  .girl-coffee-tablet{
+    display: block;    
+  }
+
+  main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    border: 4px solid orange;
+    place-items: center;
+  }
+
+  .section-info{
+    padding: 0;
+    margin: 0;
+    width: 339px;
+    height: 287px;
+  }
+
+  
+  
+ 
+  
+}
+
+@media only screen and (min-width:1440px){
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .main-title{
+    font-size: 56px;
+    line-height: 70.56px;
+    margin-bottom: 29px;
+  }
+
+  .main-title-description{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+*/
