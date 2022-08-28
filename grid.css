@@ -1,7 +1,7 @@
 .main-grid{
   display: grid;
   grid-template-columns: 1fr;
-  /*border: 2px solid blue;*/
+  border: 2px solid blue;
   column-gap: 10px; 
   row-gap: 40px;
 }
@@ -13,7 +13,7 @@
 .crypto,
 .business{
   padding-top: 56px;
-  /*border: 2px solid green;*/
+  border: 2px solid green;
   background-color: white;
   position: relative;
   padding-left: 28px;
